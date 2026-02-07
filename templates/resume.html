@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="resume-page">
+    <div class="resume-header-flex">
+        <div>
+            <h1>Gloria Atolagbe</h1>
+            <p class="subtitle">Computing and Security Technology | GPA: 3.86</p>
+        </div>
+        <a href="static/Gloria_Atolagbe_Resume.pdf" 
+           download="Gloria_Atolagbe_Resume.pdf" 
+           class="download-btn">
+           Download PDF
+        </a>
+    </div>
+    <section class="resume-section">
+        <h2><i class="accent"></i> Education</h2>
+        <div class="resume-item">
+            <div class="item-header">
+                <h3>Drexel University</h3>
+                <span>Anticipated Graduation: June 2027</span>
+            </div>
+            <p><strong>BS in Computing and Security Technology</strong> | GPA: 3.86</p>
+            <p class="coursework">Relevant Coursework: Computing and Informatics Design, Open Server 1, Network Administration, Database Administration, Mobile App Development.</p>
+        </div>
+
+        <div class="resume-item">
+            <div class="item-header">
+                <h3>Community College of Baltimore County</h3>
+                <span>Graduated June 2024</span>
+            </div>
+            <p><strong>AAS in Information Technology</strong> | Magna Cum Laude</p>
+        </div>
+    </section>
+
+    <section class="resume-section">
+        <h2><i class="accent"></i> Experience</h2>
+        <div class="resume-item">
+            <div class="item-header">
+                <h3>Information Technology Co-op</h3>
+                <span>Sept 2025 - Present</span>
+            </div>
+            <p class="company">Burns Engineering | Philadelphia, PA</p>
+            <ul>
+                <li>Conducted a comprehensive Active Directory audit, identifying and remediating multiple
+                    vulnerabilities to bolster system security and compliance.</li>
+                <li>Managed the full life-cycle of system imaging and deployment using Intune, ensuring consistent 
+                    software configurations for all new hires.</li>
+                <li>Handled employee on-boarding and off boarding processes, ensuring proper account setup, 
+                    access control, and equipment provisioning.</li>
+                <li>Monitored the IT help-desk and resolved user issues in a timely manner</li>
+            </ul>
+        </div>
+
+        <div class="resume-item">
+            <div class="item-header">
+                <h3>NSF-REU Undergraduate Researcher</h3>
+                <span>June 2023 - Aug 2023</span>
+            </div>
+            <p class="company">University of Maryland Baltimore County | Baltimore, MD</p>
+            <ul>
+                <li>Performed advanced data analysis using R to interpret survey results and presented findings to faculty.</li>
+                <li>Applied Human-Centered Computing principles to evaluate user-centered design and interaction efficiency.</li>
+                <li>Produced weekly technical reports and presentations to document research progress and insights.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="resume-section">
+        <h2><i class="accent"></i> Projects</h2>
+        <div class="resume-item">
+            <h3>Books&Co</h3>
+            <ul>
+                <li>Developed a full-stack responsive website using JavaScript, HTML, and CSS within an Agile team environment.</li>
+                <li>Integrated backend services using Node.js and MongoDB; managed version control 
+                    via GitLab and deployed thefinal product on Vercel.</li>   
+            </ul>
+        </div>
+        <div class="resume-item">
+            <h3>Personal Website</h3>
+            <ul>
+                <li>Created a full-stack personal portfolio using JavaScript, HTML, and CSS for a responsive front-end experience,
+                    integrating a Python (Flask) backend to handle dynamic content and data processing.</li>
+                <li>Managed version control and deployment through Git, maintaining a clean codebase with frequent commits
+                    ensuring the data is up to date.</li>   
+            </ul>
+        </div>
+    </section>
+
+    <section class="resume-section">
+        <h2><i class="accent"></i> Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <strong>Languages:</strong>  JavaScript, Java, SQL (MySQL, Oracle), Bash, HTML, CSS, R, Python
+            </div>
+            <div class="skill-category">
+                <strong>Tools & Frameworks:</strong> Git, VS Code, Visual Studio, Eclipse, Adobe, Microsoft Office, Intune, Node.js, MongoDB
+            </div>
+            <div class="skill-category">
+                <strong>Operating Systems:</strong> Windows, Ubuntu Linux, IOS
+            </div>
+            <div class="skill-category">
+                <strong>Methodologies:</strong> Agile
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
