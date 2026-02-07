@@ -15,6 +15,7 @@ client = MongoClient(MONGO_URI)
 db = client.portfolio_db
 messages_collection = db.messages
 
+
 @app.route('/')
 def index():
     return render_template('index.html', title="Home")
@@ -44,6 +45,9 @@ def contact():
     
     return render_template('contact.html', title="Contact")
 
+# Handles both Render deployment and local development
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    
+    app.run(host='0.0.0.0', port=port, debug=True)
     
