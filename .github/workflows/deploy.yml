@@ -15,5 +15,5 @@ jobs:
           server: ftpupload.net
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
+          local-dir: ./templates/
           server-dir: /htdocs/ # Uploads to your main website folder
