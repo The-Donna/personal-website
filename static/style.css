@@ -54,16 +54,16 @@ h1, h2, h3 {
     gap: 20px; 
 }
 
+.nav-link.active {
+    border-bottom: 2px solid white;
+}
+
 .nav-logo {
     font-weight: bold;
     text-decoration: none;
     font-size: 2rem;
     font-family: "Brush Script MT", "Lucida Handwriting", cursive;
     color: var(--offwhite);
-}
-
-.nav-link {
-    text-decoration: none;
 }
 
 .container {
