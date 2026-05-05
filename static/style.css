@@ -1,18 +1,29 @@
 :root {
-    --burgundy: #800020;
+    --burgundy: #800020; /* accent color */
     --white: #ffffff;
-    --light-gray: #f4f4f4;
-    --charcoal: #2E2E2E;
+    --offwhite: #FAF8F5; /* background color */
+    --darknavy: #0F172A; /* primary color */
+    --fontbody: 'Inter', sans-serif;
+    --fontheading: 'Playfair Display', serif;
 }
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.2rem; }
+p  { font-size: 1rem; line-height: 1.7; }
 
 body {
     margin: 0;
-    font-family: sans-serif;
-    background-color: var(--light-gray);
+    font-family: var(--fontbody);
+    background-color: var(--offwhite);
+}
+
+h1, h2, h3 {
+    font-family: var(--fontheading);
 }
 
 .navbar {
-    background-color: var(--charcoal);
+    background-color: var(--darknavy);
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -48,7 +59,7 @@ body {
     text-decoration: none;
     font-size: 2rem;
     font-family: "Brush Script MT", "Lucida Handwriting", cursive;
-    color: var(--light-gray);
+    color: var(--offwhite);
 }
 
 .nav-link {
@@ -60,7 +71,7 @@ body {
     margin: 40px auto;
     padding: 20px;
     background: var(--white);
-    border-top: 5px solid var(--burgundy); /* Accent line */
+    border-top: 5px solid var(--burgundy); 
     border-radius: 4px;
 }
 
@@ -76,7 +87,7 @@ h1 {
 }
 
 .burgundy-form button {
-    background: var(--burgundy);
+    background: var(--darknavy);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -206,8 +217,8 @@ h1 {
 
 /* Footer Container */
 .site-footer {
-    background-color: var(--charcoal);
-    color: var(--light-gray);            
+    background-color: var(--darknavy);
+    color: var(--offwhite);            
     padding: 40px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -241,7 +252,7 @@ h1 {
 }
 
 .social-icons a {
-    color: var(--light-gray);
+    color: var(--offwhite);
     font-size: 24px;
     transition: color 0.3s ease, transform 0.2s ease;
     text-decoration: none;
@@ -325,4 +336,53 @@ h1 {
         width: 200px;
         height: 200px;
     }
+}
+
+.skills-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.badge {
+    background-color: #f0e6ea;
+    color: var(--burgundy);
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: var(--font-body);
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 12px;
+    margin: 24px 0 8px;
+}
+
+.btn-primary {
+    background-color: var(--burgundy);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.btn-primary:hover { opacity: 0.85; }
+
+.btn-outline {
+    border: 1.5px solid var(--burgundy);
+    color: var(--burgundy);
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-outline:hover {
+    background-color: #f0e6ea;
 }
